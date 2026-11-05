@@ -78,9 +78,24 @@ No data file is stored in the repo.
 
 ---
 
+## Curve analysis and rates recap
+
+`curve_analysis.ipynb` follows the Canadian curve through the Bank of Canada's 2022-2026 cycle: the
+policy rate, 2, 5 and 10-year yields, 2s10s, the 2s5s10s butterfly, and headline and core inflation.
+It downloads fresh data each time it runs and ends with a monitor table of the latest numbers.
+
+[`rates_recap.md`](rates_recap.md) is a one-page recap of the October 2026 hike written from that analysis.
+
+<p align="center">
+  <img src="figures/04_policy_and_yields.png" width="75%" alt="Bank of Canada policy rate and Government of Canada yields">
+</p>
+
+---
+
 ## How to run
 
 ```bash
 pip install -r requirements.txt
 jupyter notebook swap_valuation.ipynb
+jupyter notebook curve_analysis.ipynb
 ```
